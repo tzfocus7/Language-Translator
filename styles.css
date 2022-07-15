@@ -1,0 +1,164 @@
+/* importing google font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #5372f0;
+}
+.container{
+    width: 700px;
+    background: #fff;
+    border-radius: 7px;
+    padding: 30px;
+}
+.wrapper{
+    border: 1px solid #bbb;
+    border-radius: 5px;
+}
+.wrapper .text-input{
+    display: flex;
+    border-bottom: 1px solid #bbb;
+}
+.text-input .to-text{
+    border-left: 1px solid #bbb;
+    border-radius: 0;
+}
+.text-input textarea{
+    height: 250px;
+    width: 100%;
+    border: none;
+    resize: none;
+    outline: none;
+    font-size: 18px;
+    background: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+.controls{
+    list-style: none;
+    padding: 12px 15px;
+}
+.controls, li, .icons, .icons i{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.controls .row.from .icons{
+    padding-right: 15px;
+    border-right: 1px solid #bbb;
+}
+.controls .row.to .icons{
+    padding-left: 15px;
+    border-left: 1px solid #bbb;
+}
+
+.controls .icons{
+    width: 38%;
+}
+.controls .icons i{
+    width: 50px;
+    color: #9f9f9f;
+    font-size: 14px;
+    cursor: pointer;
+    justify-content: center;
+}
+.controls .row select{
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background: none;
+}
+.controls .exchange{
+    color: #9f9f9f;
+    font-size: 16px;
+    cursor: pointer;
+}
+.container button{
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 5px;
+    background: #5372f0;
+}
+
+@media screen and (max-width:767px){
+    .container{
+        width: 90%;
+        height: 90%;
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width:548px) and (max-width:670px){
+    .controls .icons i{
+        width: 30px;
+        font-size: 12px;
+    }
+    .controls .row select{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:548px){
+    .wrapper .text-input{
+        flex-direction: column;
+    }
+    .text-input .to-text{
+        border-top: 1px solid #bbb;
+        border-left-width: 0;
+    }
+    .controls{
+        flex-direction: column;
+        padding: 12px 0px;
+    }
+    .controls li{
+        width: 100%;
+        border-bottom: 1px solid #bbb;
+        padding: 10px;
+    }
+    .controls li:nth-child(3){
+        border-bottom: 0;
+        padding: 10px 10px 0 10px;
+    }
+    .controls li:nth-child(1){
+        padding: 0 10px 10px 10px;
+    }
+    .controls .exchange{
+        justify-content: center;
+    }
+    .controls .row.to{
+        flex-direction: row-reverse;
+    }
+    .controls .row.to .icons{
+        padding-left: 0;
+        border-left: 0;
+        padding-right: 15px;
+        border-right: 1px solid #bbb;
+    }
+}
+
+@media screen and (max-width:367px){
+    .controls .icons i{
+        width: 20px;
+        font-size: 12px;
+    }
+    .controls .row select{
+        font-size: 13px;
+    }
+    .exchange{
+        font-size: 11px;
+    }
+}
