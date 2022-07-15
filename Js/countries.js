@@ -9,6 +9,7 @@ const countries = {
     "bo-CN": "Tibetan",
     "br-FR": "Breton",
     "bs-BA": "Bosnian",
+    "zh-CN": "Chinese",
     "ca-ES": "Catalan",
     "cop-EG": "Coptic",
     "cs-CZ": "Czech",
